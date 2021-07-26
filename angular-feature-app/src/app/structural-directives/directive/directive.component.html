@@ -1,0 +1,88 @@
+<div class="container">
+    <h1>List of Students</h1>
+    <ul *ngFor = "let student of students">
+        <li>{{student}}</li>
+    </ul>
+</div>
+<div class="container">
+    <h1>List Of Movies</h1>
+    <ul *ngFor = "let movie of movies">
+        <li>{{movie.title}}</li>
+        <li>{{movie.Director}}</li>
+        <li>{{movie.cast}}</li>
+        <li>{{movie.date}}</li>
+    </ul>
+</div>
+<div class="container">
+    <h1>List of Movies Using Table</h1>
+    <table class = "table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Director</th>
+                <th>Cast</th>
+                <th>Release Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let movie of movies">
+                <td>{{movie.title}}</td>
+                <td>{{movie.Director}}</td>
+                <td>{{movie.cast}}</td>
+                <td>{{movie.date}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <h1>List of porducts</h1>
+    <ul *ngFor = "let product of products">
+        <li>{{product}}</li>
+    </ul>
+</div>
+
+<div class="container">
+    <h1>List of Employees</h1>
+    <table class = "table">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Total employees</th>
+                <th>First Record</th>
+                <th>Last Record</th>
+                <th>Odd Record</th>
+                <th>Even Record</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Skills</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let i = index; let total = count; let first = first; let last = last; 
+                        let odd = odd; let even=even; let employee of employees">
+                <td>{{i + 1}}</td>
+                <td>{{total}}</td>
+                <td>{{first}}</td>
+                <td>{{last}}</td>
+                <td>{{odd}}</td>
+                <td>{{even}}</td>
+                <!-- <td>{{'Mr.' + employee.name}}</td> -->
+                <td>
+                    <input type="text" [(ngModel)] = "'Mr.' +employee.name">
+                </td>
+                <td>{{employee.email}}</td>
+                <td>
+                    <table>
+                        <tbody>
+                            <tr *ngFor = "let skill of employee.skills">
+                                <td>{{skill.skill + ','}}</td>
+                                <td>{{skill.Exp}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

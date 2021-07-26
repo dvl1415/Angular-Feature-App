@@ -1,5 +1,6 @@
+
 <div class="container">
-  <!-- InterPolation - Curely Braces-->
+   <!-- InterPolation - Curely Braces -->
  <h1>{{interPolation}} </h1> 
   <h4>Full Name is:  {{firstName}}  {{lastName}}</h4>
   {{1+1}}
@@ -9,9 +10,26 @@
 <br> <br>
 <div class="container">
   <h1>{{propertyBinding}}</h1>
-  <!-- Property Binding - Square Brackets-->
+   <!-- Property Binding - Square Brackets -->
   <h1 [innerText] = "innerText"></h1> 
   <h2> This is Without the property Binding</h2>
   <button [disabled] = "isDisabled" class = "btn btn-primary">I am Disabled</button> <br> <br>
   <a [href] = "url" target="_blank"> Angular CLI</a>
+</div> <br> 
+<div class = "container">
+  <h1>{{eventBinding}}</h1>
+  <button class="btn btn-primary" (click) = "clickMe()">Counter</button>
+  <p>You have clicked {{counter}}</p>
 </div>
+
+<div class="container">
+  <h1>{{twoWayDataBinding}}</h1>
+  <input type="text" class = "form-control w-50" [(ngModel)] = "fName"> <br>
+  <input type="text" class = "form-control w-50" [(ngModel)] = "lastName"> <br>
+  <p>
+    {{getFullName()}}
+  </p>
+</div>
+<br><br><br> 
+
+<app-directive></app-directive>
