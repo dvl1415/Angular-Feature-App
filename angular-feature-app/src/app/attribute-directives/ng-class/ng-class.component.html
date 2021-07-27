@@ -1,0 +1,43 @@
+<div class="container">
+    <h1>Using ngClass Attribute Using String</h1>
+    <div [ngClass] = "'red  size20'">
+        Red Text with size 20px
+    </div>
+</div>
+
+<div class="container">
+    <h1>Using ngClass Attribute Using Array</h1>
+    <div [ngClass] = "['blue', 'size20']">
+        Blue Text with size 20px
+    </div>
+</div>
+
+<div class="container">
+    <h1>Using ngClass Attribute Using Object</h1>
+    <input type="checkbox" [(ngModel)] = "displayColor"> Display Color <br>
+    <input type="checkbox" [(ngModel)] = "displaySize"> Display Size <br>
+    <div [ngClass] = "{'green' : displayColor, 'size20' : displaySize}">
+        Green Text with size 20px
+    </div>
+</div>
+<br>
+<div class="container">
+    <h1>Using ngClass Attribute Using Dynamic String</h1>
+    <div [ngClass] = "cssStringVar">
+        Red Text with size 20px
+    </div>
+</div>
+<br>
+<div class="container">
+    <h1>Using ngClass Attribute Using Dynamic Array</h1>
+    <div [ngClass] = "cssArrayVar">
+        Blue Text with size 20px
+    </div>
+</div>
+<br>
+<div class="container">
+    <h1>Using ngClass Attribute Using Dynamic Object</h1>
+    <div [ngClass] = "cssObjectVar">
+        Green Text with size 20px
+    </div>
+</div>

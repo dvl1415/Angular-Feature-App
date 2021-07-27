@@ -7,6 +7,10 @@ import { StudentTestComponent } from './components/student-test/student-test.com
 import { EmployeeComponent } from './components/employee/employee.component';
 import { ProductComponent } from './components/product/product.component';
 import { DirectiveComponent } from './structural-directives/directive/directive.component';
+import { NgSwitchComponent } from './structural-directives/ng-switch/ng-switch.component';
+import { NgIfComponent } from './structural-directives/ng-if/ng-if.component';
+import { NgClassComponent } from './attribute-directives/ng-class/ng-class.component';
+import { NgStyleComponent } from './attribute-directives/ng-style/ng-style.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { DirectiveComponent } from './structural-directives/directive/directive.
     StudentTestComponent,
     EmployeeComponent,
     ProductComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    NgSwitchComponent,
+    NgIfComponent,
+    NgClassComponent,
+    NgStyleComponent
   ],
   imports: [
     BrowserModule,
