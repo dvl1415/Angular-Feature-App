@@ -1,0 +1,38 @@
+<div class="container">
+    <h1>Using NgIf Directive</h1>
+    <input type="checkbox" [(ngModel)] = "show">
+    <div *ngIf = "show">Display This</div>
+    <p [hidden] = "!show">
+        Display The Content of Paragraph
+    </p>
+</div>
+<br> <br>
+<div class="container">
+    <h1>Using NgIf / Else</h1>
+    <div *ngIf = "show; else display">
+        Display this content if checkbox is checked 
+    </div>
+    <ng-template #display>
+        Display this content if checkbox is unchecked
+    </ng-template>
+
+    <!-- Below Format is Invalid 
+         ! Type 'HTMLDivElement' is not assignable to type 'TemplateRef<NgIfContext<boolean>>'
+
+     <div #display>
+        Display this content if checkbox is unchecked
+    </div> -->
+</div>
+<br> <br>
+<div class="container">
+    <h1>Using NgIf then block</h1>
+    <div *ngIf = "show; then thenBlock else elseBlock">
+        This will not be displayed
+    </div>
+    <ng-template #thenBlock>
+        Content Inside the then Block
+    </ng-template>
+    <ng-template #elseBlock>
+        Content Inside the else Block
+    </ng-template>
+</div>
