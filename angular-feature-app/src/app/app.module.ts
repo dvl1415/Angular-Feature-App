@@ -11,6 +11,11 @@ import { NgSwitchComponent } from './structural-directives/ng-switch/ng-switch.c
 import { NgIfComponent } from './structural-directives/ng-if/ng-if.component';
 import { NgClassComponent } from './attribute-directives/ng-class/ng-class.component';
 import { NgStyleComponent } from './attribute-directives/ng-style/ng-style.component';
+import { CustomDirective } from './directives/custom.directive';
+import { EmojiDirective } from './directives/emoji.directive';
+import { CustomPipe } from './pipes/custom.pipe';
+import { PipeComponent } from './components/pipe/pipe.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +27,11 @@ import { NgStyleComponent } from './attribute-directives/ng-style/ng-style.compo
     NgSwitchComponent,
     NgIfComponent,
     NgClassComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    CustomDirective,
+    EmojiDirective,
+    CustomPipe,
+    PipeComponent,
   ],
   imports: [
     BrowserModule,
