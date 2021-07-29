@@ -1,0 +1,49 @@
+<!-- Pipe Uses for the filtering purposes -->
+<div class="container">
+    <h1>{{title}}</h1>
+    <p>Unformatted Date : {{toDate}}</p>
+    <p>Formatted Date : {{toDate | date}}</p> 
+    <br>
+    <h2>Passing Arguments to the Pipe</h2>
+    <p>Unformatted Date : {{toDate}}</p>
+    <p>Formatted Date : {{toDate | date : 'medium'}}</p> 
+    <br>
+    <h2>Chaining Pipes</h2>
+    <p>Unformatted Date : {{toDate}}</p>
+    <p>Formatted Date : {{toDate | date : 'fullDate'}}</p>
+    <h4>Formatting the upper pipe with upper case , i.e. Chaining</h4>
+    <p>Formatted Date : {{toDate | date : 'fullDate' | uppercase}}</p>
+    <h2>Few More Pipes</h2>
+    <p>Unformatted Date : {{toDate}}</p>
+    <p>Full Date : {{toDate | date : 'fullDate'}}</p>
+    <p>Medium Date : {{toDate | date : 'medium'}}</p>
+    <p>Sort Date : {{toDate | date : 'sort'}}</p>
+    <p>Long Date : {{toDate | date : 'longDate'}}</p>
+    <p> MediumDate : {{toDate | date : 'mediumDate'}}</p>
+    <p> MM/dd/y Format : {{toDate | date : 'MM-dd-yyyy'}}</p>
+    <p> MM/dd/YYYY HH:mm Format : {{toDate | date : 'MM-dd-yyyy HH:mm'}}</p>
+</div>
+<br>
+<div class="container">
+    <h1>{{casePipe}}</h1>
+    <p>Unformatted : {{message}}</p>
+    <p>UpperCase Pipe : {{message | uppercase}}</p>
+    <p>LowerCase Pipe : {{message | lowercase}}</p>
+</div>
+<br>
+<div class="container">
+    <h1>{{slicePipe}}</h1>
+    <p>Unformatted : {{slicePipe}}</p>
+    <p>UpperCase Pipe : {{slicePipe | slice : 11:20}}</p>
+    <p>UpperCase Pipe : {{slicePipe | slice : 1:10}}</p>
+</div>
+<br>
+<div class="container">
+    <h1>Currency Pipe</h1>
+    <p>Unformatted : {{moneyPipe}}</p>
+    <p>Currency Pipe : {{moneyPipe | currency}}</p>
+    <p>Indian Currency Pipe : {{moneyPipe | currency : 'INR'}}</p>
+    <p>Canadian Currency Pipe : {{moneyPipe | currency : 'CAD'}}</p>
+    <p>Canadian Currency Pipe : {{moneyPipe | currency : 'CAD'}}</p>
+    <p>Australian Currency Pipe : {{moneyPipe | currency : 'AUD'}}</p>
+</div>
