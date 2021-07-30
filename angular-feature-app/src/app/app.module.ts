@@ -15,6 +15,13 @@ import { CustomDirective } from './directives/custom.directive';
 import { EmojiDirective } from './directives/emoji.directive';
 import { CustomPipe } from './pipes/custom.pipe';
 import { PipeComponent } from './components/pipe/pipe.component';
+import { GenderPipe } from './pipes/gender.pipe';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
+import { ChildOneComponent } from './components/child-one/child-one.component';
+import { ParentOneComponent } from './components/parent-one/parent-one.component';
+import { ParentTwoComponent } from './components/parent-two/parent-two.component';
+import { ChildTwoComponent } from './components/child-two/child-two.component';
 
 
 @NgModule({
@@ -32,6 +39,13 @@ import { PipeComponent } from './components/pipe/pipe.component';
     EmojiDirective,
     CustomPipe,
     PipeComponent,
+    GenderPipe,
+    ParentComponent,
+    ChildComponent,
+    ChildOneComponent,
+    ParentOneComponent,
+    ParentTwoComponent,
+    ChildTwoComponent,
   ],
   imports: [
     BrowserModule,

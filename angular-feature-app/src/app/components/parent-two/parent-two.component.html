@@ -1,0 +1,10 @@
+<!-- This Method Called as the Template Reference Variable -->
+<div class="container">
+    <h2>Child to Parent Communication</h2>
+    <p>
+        Current Count is {{child.count}}
+    </p>
+    <app-child-two #child></app-child-two>
+    <button class="btn btn-primary" (click) = "child.increment()">Increment</button> &nbsp; &nbsp; &nbsp;
+    <button class="btn btn-primary" (click) = "child.decrement()">Decrement</button>
+</div>
