@@ -1,0 +1,9 @@
+<div class="container">
+    <h2>Child to Parent Communication</h2>
+    <p>Current Count is {{counter}}</p>
+    <app-child-one 
+        [count] = "counter" 
+        (countChanged) = "countChangedHandler($event)"
+    >
+    </app-child-one>
+</div>
