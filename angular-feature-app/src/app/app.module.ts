@@ -15,6 +15,7 @@ import { CustomDirective } from './directives/custom.directive';
 import { EmojiDirective } from './directives/emoji.directive';
 import { CustomPipe } from './pipes/custom.pipe';
 import { PipeComponent } from './components/pipe/pipe.component';
+import { GenderPipe } from './pipes/gender.pipe';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { PipeComponent } from './components/pipe/pipe.component';
     EmojiDirective,
     CustomPipe,
     PipeComponent,
+    GenderPipe,
   ],
   imports: [
     BrowserModule,
