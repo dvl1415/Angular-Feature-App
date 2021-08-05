@@ -29,6 +29,8 @@ import { LifeCycleChildComponent } from './components/life-cycle-child/life-cycl
 import { HttpClientModule } from '@angular/common/http';
 import { ParentCustomerComponent } from './components/parent-customer/parent-customer.component';
 import { ChildCustomerComponent } from './components/child-customer/child-customer.component';
+import { ChildDestroyComponent } from './components/child-destroy/child-destroy.component';
+import { ParentDestroyComponent } from './components/parent-destroy/parent-destroy.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +60,8 @@ import { ChildCustomerComponent } from './components/child-customer/child-custom
     LifeCycleChildComponent,
     ParentCustomerComponent,
     ChildCustomerComponent,
+    ChildDestroyComponent,
+    ParentDestroyComponent,
     
   ],
   imports: [
