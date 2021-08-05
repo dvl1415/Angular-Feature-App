@@ -7,6 +7,10 @@
         Name: <input type="text" class = "form-control w-50" [(ngModel)] = "name">
     </p>
     <p>
-        <button class = "btn btn-primary">Update</button>
+        Code: <input type="text" class = "form-control w-50" [(ngModel)] = "code">
+    </p>
+    <app-child-customer [message] = "message" [customer] = "customer"></app-child-customer>
+    <p>
+        <button class = "btn btn-primary" (click) = "updateCustomer()">Update</button>
     </p>
 </div>
