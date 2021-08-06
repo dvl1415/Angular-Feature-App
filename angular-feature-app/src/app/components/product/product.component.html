@@ -1,1 +1,36 @@
-<p>product works!</p>
+<div class="container">
+    <h2>Display products from productList</h2>
+    <app-product-list></app-product-list>
+</div>
+<div class="container">
+    <h1 class = "heading">Services</h1>
+    <button type = "button" (click) = "getProducts()" class = "btn btn-primary">Get Products</button>
+</div>
+<br>
+<div class="container" *ngIf = "products.length > 0">
+    <h2>List Of Products</h2>
+    <ul *ngFor = "let product of products">
+        <li>{{product.id}}</li>
+        <li>{{product.name}}</li>
+        <li>{{product.price}}</li>
+    </ul>
+</div>
+<div class="container" *ngIf = "products.length > 0">
+    <h2>List of Products Using Table</h2>
+    <table class = "table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let product of products">
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
