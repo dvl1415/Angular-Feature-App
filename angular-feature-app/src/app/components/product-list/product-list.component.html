@@ -1,0 +1,8 @@
+<div class="container" *ngIf = "productList.length > 0">
+    <h2>List Of Products</h2>
+    <ul *ngFor = "let product of productList">
+        <li>{{product.id}}</li>
+        <li>{{product.name}}</li>
+        <li>{{product.price}}</li>
+    </ul>
+</div>
