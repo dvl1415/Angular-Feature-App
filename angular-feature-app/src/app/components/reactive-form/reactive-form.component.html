@@ -1,0 +1,67 @@
+<div class="container">
+    <h1>Reactive Forms</h1>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label>FirstName</label>
+            <input type="text" class="form-control w-50" formControlName="firstName" placeholder="Enter First Name">
+        </div>
+        <br>
+        <div>
+            <label>LastName</label>
+            <input type="text" class="form-control w-50" formControlName="lastName" placeholder="Enter Last Name">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="text" class="form-control w-50" formControlName="email" placeholder="Enter Your E-Mail">
+        </div>
+        <br>
+        <div>
+            <label>Gender</label> &nbsp;&nbsp;
+            <input type="radio" class="form-check-input" value="female" formControlName="gender"> Female
+            <input type="radio" class="form-check-input" value="male" formControlName="gender"> Male
+            <input type="radio" class = "form-check-input" value="other" name = "gender"> Other
+        </div>
+        <br>
+        <div>
+            <label>IsAdmin</label> &nbsp;&nbsp;
+            <input type="checkbox" class="form-check-input" formControlName="isAdmin">
+        </div>
+        <br>
+        <div>
+            <label>Country</label>
+            <select class="form-select" formControlName="country" placeholder="Choose Country...">
+                <option value=""></option>
+                <option [ngValue]="country.id" *ngFor="let country of countryList">
+                    {{country.name}}
+                </option>
+            </select>
+        </div>
+        <br>
+        <div formGroupName="address">
+            <div>
+                <label>City</label>
+                <input type="text" class="form-control w-50" formControlName="city">
+            </div>
+            <br>
+            <div>
+                <label>State</label>
+                <input type="text" class="form-control w-50" formControlName="state">
+            </div>
+            <br>
+            <div>
+                <label>Pincode</label>
+                <input type="text" class="form-control w-50" formControlName="pincode">
+            </div>
+        </div>
+        <br>
+        <div>
+            <label>Comments</label>
+            <textarea class="form-control" formControlName="comments" placeholder="Enter Comments Here..."></textarea>
+        </div>
+        <br><br>
+        <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
