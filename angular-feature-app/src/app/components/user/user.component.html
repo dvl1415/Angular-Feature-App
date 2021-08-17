@@ -15,7 +15,9 @@
         </thead>
         <tbody>
             <tr *ngFor = "let user of userList">
-                <td >{{user.id}}</td>
+                <td>
+                    <a [routerLink] = "['/users', user.id]">{{user.id}}</a>
+                </td>
                 <td>{{user.name}}</td>
                 <td>{{user.email}}</td>
                 <td>{{user.address?.city}}</td>
