@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>People Data</h2>
+    <button (click) = "getPeople()" class = "btn btn-primary">Get People</button> &nbsp; &nbsp;
+    <button (click) = "addPeople()" class = "btn btn-primary">Add People</button> &nbsp; &nbsp;
+    <button (click) = "editPeople()" class = "btn btn-primary">Edit People</button> &nbsp; &nbsp;
+    <button (click) = "deletePeople()" class = "btn btn-primary">Delete People</button> &nbsp; &nbsp;
+    <table class = "table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let data of people">
+                <td>{{data.id}}</td>
+                <td>{{data.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
