@@ -1,0 +1,32 @@
+{
+  "people": [
+    {
+      "id": 1,
+      "name": "Dvl"
+    },
+    {
+      "id": 2,
+      "name": "Patel"
+    },
+    {
+      "id": 3,
+      "name": "Krina"
+    },
+    {
+      "id": 4,
+      "name": "SP"
+    },
+    {
+      "id": 5,
+      "name": "Patidar"
+    },
+    {
+      "id": 6,
+      "name": "Guru Om"
+    },
+    {
+      "id": 7,
+      "name": "Harshil"
+    }
+  ]
+}

@@ -41,6 +41,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { PeopleComponent } from './components/people/people.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { UserDetailsComponent } from './components/user-details/user-details.com
     ContactComponent,
     ErrorComponent,
     UserDetailsComponent,
+    PeopleComponent,
     
   ],
   imports: [
