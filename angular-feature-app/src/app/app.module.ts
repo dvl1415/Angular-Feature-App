@@ -42,6 +42,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 import { PeopleComponent } from './components/people/people.component';
+import { StudentMongoDataComponent } from './components/student-mongo-data/student-mongo-data.component';
+import { StudentSqlDataComponent } from './components/student-sql-data/student-sql-data.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +85,8 @@ import { PeopleComponent } from './components/people/people.component';
     ErrorComponent,
     UserDetailsComponent,
     PeopleComponent,
+    StudentMongoDataComponent,
+    StudentSqlDataComponent,
     
   ],
   imports: [

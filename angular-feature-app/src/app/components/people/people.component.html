@@ -19,3 +19,12 @@
         </tbody>
     </table>
 </div>
+
+<div class="container">
+    <h2>Get data from Node.JS End Point </h2>
+    <button (click) = "getStudents()" class = "btn btn-primary">Get Students</button> &nbsp; &nbsp;
+    <ul *ngFor = "let student of students">
+        <li>{{student.id}}</li>
+        <li>{{student.name}}</li>
+    </ul>
+</div>
